@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+
+    <!-- swiper js Link -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="../style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="top-header">
+      <div class="out-box">
+        <div class="inside-box">
+          <div class="col-1">
+            <span><i class="bx bxs-envelope"></i> info@gmail.com</span>
+            <span><i class="bx bxs-phone-call"></i> +234 701 1917 533</span>
+            <span><i class="bx bxs-alarm"></i> Mon - Sat (08 AM - 10 PM)</span>
+          </div>
+          <div class="col-2">
+            <a href="#"><i class="bx bx-arrow-to-right"></i> Login</a>
+            <a href="#"><i class="bx bxs-user"></i> Register</a>
+            <span>Follow Us:</span>
+            <div class="social">
+              <i class="bx bxl-twitter"></i>
+
+              <i class="bx bxl-facebook"></i>
+
+              <i class="bx bxl-instagram"></i>
+
+              <i class="bx bxl-linkedin-square"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------nav header section------------- -->
+    <header class="header">
+      <div class="logo">
+        <img src="../img/logo/logo.png" alt="" />
+      </div>
+      <nav>
+        <div class="navbar">
+          <ul class="navLink">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li>
+              <a href="#">Inventory <i class="bx bx-chevron-down"></i></a>
+              <ul class="drop-down">
+                <li><a href="./inventory_grid.html">Inventory Grid</a></li>
+                <li><a href="./inventory_list.html">Inventory List</a></li>
+                <li><a href="./inventory_single.html">Inventory Single</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Pages <i class="bx bx-chevron-down"></i></a>
+
+              <ul class="drop-down">
+                <li><a href="#">About</a></li>
+                <li>
+                  <a href="#"
+                    >Car Listing <i class="bx bx-chevron-down chev"></i
+                  ></a>
+
+                  <ul class="drop-down-2">
+                    <li><a href="#">Listing Grid</a></li>
+                    <li><a href="#">Listing List</a></li>
+                    <li><a href="#">Listing Single</a></li>
+                    <li><a href="#">Compare</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Account</a></li>
+                <li>
+                  <a href="#"
+                    >My Account <i class="bx bx-chevron-down chev"></i
+                  ></a>
+                  <ul class="drop-down-2">
+                    <li><a href="./dashboard.html">Dashboard</a></li>
+                    <li><a href="./profile.html" class="active">My Profile</a></li>
+                    <li><a href="./listing.html">My Listing</a></li>
+                    <li><a href="#">Add Listing</a></li>
+                    <li><a href="#">My Favorites</a></li>
+                    <li><a href="#">Message</a></li>
+                    <li><a href="#">Settings</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    >Authentication <i class="bx bx-chevron-down chev"></i
+                  ></a>
+                  <ul class="drop-down-4">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Forgot Password</a></li>
+                    <li><a href="#">Reset Password</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    >Services <i class="bx bx-chevron-down chev"></i
+                  ></a>
+                  <ul class="drop-down-5">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Services Single</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Dealer <i class="bx bx-chevron-down chev"></i></a>
+                  <ul class="drop-down-6">
+                    <li><a href="#">Dealer</a></li>
+                    <li><a href="#">Dealer Single</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Extra Pages</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Pricing Plan</a></li>
+                <li><a href="#">Calculator</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Testimonials</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Shop <i class="bx bx-chevron-down"></i></a>
+              <ul class="drop-down">
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Shop Casting</a></li>
+                <li><a href="#">Shop Checkout</a></li>
+                <li><a href="#">Shop Single</a>e</li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Blog <i class="bx bx-chevron-down"></i></a>
+              <ul class="drop-down">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Blog Single</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="other">
+          <i class="bx bx-search"></i>
+          <i class="bx bx-cart-download cart"></i>
+          <button class="addBtn">
+            <i class="bx bx-plus-circle"></i>
+            Add Listing
+          </button>
+          <i class="bx bx-menu-alt-left" id="menuBtn"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div class="inventory">
+      <h2>Profile</h2>
+      <div class="link">
+        <a href="../index.html">Home</a>
+        <span>>>></span>
+        <p>Profile</p>
+      </div>
+    </div>
+
+    <!-- dashboard section start-->
+
+    <section class="dashboard">
+      <div class="dash-row">
+        <div class="side_one">
+          <div class="profile">
+            <img src="../img/dashboard/user.jpg" alt="" />
+            <h6>Antoni Johnson</h6>
+            <span>antoni@example.com</span>
+            <i class="bx bx-camera"></i>
+          </div>
+
+          <div class="box">
+            <a href="#"><i class="bx bx-bx-error-alt"></i>Dashboard</a>
+          </div>
+
+          <div class="box activated">
+            <a href="#"><i class="bx bx-user"></i>My Profile</a>
+          </div>
+
+          <div class="box">
+            <a href="#"><i class='bx bx-data' ></i>My Listing</a>
+          </div>
+          <div class="box">
+            <a href="#"><i class='bx bx-plus-circle'></i>Add Listing</a>
+          </div>
+          <div class="box">
+            <a href="#"><i class='bx bxs-heart'></i>My Favorites</a>
+          </div>
+          <div class="box">
+            <a href="#"><i class='bx bxs-envelope'></i>Message</a>
+          </div>
+          <div class="box">
+            <a href="#"><i class='bx bxs-cog'></i>Setting</a>
+          </div>
+          <div class="box">
+            <a href="#"><i class='bx bx-log-out' ></i>Logout</a>
+          </div>
+        </div>
+
+
+        <div class="side_two">
+            <div class="row-one">
+                <div class="side-col_one">
+                <h5>Profile Info</h5>
+                <div class="box">
+                    <div class="inputBox">
+                        <label for="">First Name</label>
+                        <input type="text" placeholder="First Name">
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="">Last Name</label>
+                        <input type="text" placeholder="Last Name">
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="">Email</label>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="">Phone</label>
+                        <input type="number" placeholder="Phone">
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <label for="">Address</label>
+                    <input type="text" placeholder="Address">
+                </div>
+                
+                <div class="button">
+                    <a href="#"><i class="bx bx-user"></i>Save Changes</a>
+                </div>
+                </div>
+
+                <div class="side-col_two">
+                    <h5>Change Password</h5>
+                    <div class="box">
+                <div class="inputBox">
+                    <label for="">Old Password</label>
+                    <input type="password" placeholder="Old Password">
+                 </div>
+
+                 <div class="inputBox">
+                    <label for="">New Password</label>
+                    <input type="password" placeholder="New Password">
+                 </div>
+
+                 <div class="inputBox">
+                    <label for="">Confirm New Password</label>
+                    <input type="password" placeholder="Confirm New Password">
+                 </div>
+                    </div>
+                    <div class="button">
+                        <a href="#"><i class="bx bx-key"></i>Change Password</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-two">
+                <h5>Store Info</h5>
+                <div class="box">
+                    <div class="inputBox">
+                        <label for="#">Store Name</label>
+                        <input type="text" placeholder="Store Name">
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="#">Contact Phone Number</label>
+                        <input type="number" placeholder="Contact Phone Number">
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="#">Contact Email</label>
+                        <input type="email" placeholder="Contact Email">
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="#"><i class="bx bx-download"></i>Save Details</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section start -->
+    <div class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <img src="../img/logo/logo-light.png" alt="" />
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse
+            rem excepturi dolores mollitia, fuga eaque atque quidem aliquid
+            accusamus vero quod reiciendis quo incidunt! Quod aperiam labore
+            distinctio rerum!
+          </p>
+          <span><i class="bx bx-phone"></i>+234 701 1917 533</span>
+          <span
+            ><i class="bx bx-location-plus"></i>28 lekki admiralty way lagos
+            state nigeria</span
+          >
+          <span><i class="bx bx-envelope"></i>amstronggooluck@gmail.com</span>
+        </div>
+
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <a href="#"><i class="bx bx-chevron-right"></i>About Us</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>Update News</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>Testimpnials</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>Teams Of Servive</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>privacy policy</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>Our Dealer</a>
+        </div>
+
+        <div class="footer-col">
+          <h5>Support Center</h5>
+          <a href="#"><i class="bx bx-chevron-right"></i>FAQ's</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>Affiliate</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>Booking Tips</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>Sell Vehicles</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>Contact Us</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>Sitmap</a>
+        </div>
+
+        <div class="footer-col">
+          <h5>Newsletter</h5>
+          <p class="text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+          <input type="text" placeholder="Your Email" />
+          <button>Subscribe Now <i class="bx bxl-telegram"></i></button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; copyright 2023 <span>MOTOB</span> All Right Reserved.</p>
+        <div class="social">
+          <i class="bx bxl-facebook"></i>
+          <i class="bx bxl-twitter"></i>
+          <i class="bx bxl-instagram"></i>
+          <i class="bx bxl-linkedin"></i>
+          <i class="bx bxl-youtube"></i>
+        </div>
+      </div>
+
+      <!-- scroll to top button -->
+
+      <a href="#" class="scrollBtn">
+        <i class="bx bx-up-arrow-alt"></i>
+      </a>
+    </div>
+
+    <!-- swiper js link -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>

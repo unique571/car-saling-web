@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory List MOTOB</title>
+
+    <!-- swiper js Link -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="top-header">
+      <div class="out-box">
+        <div class="inside-box">
+          <div class="col-1">
+            <span><i class="bx bxs-envelope"></i> info@gmail.com</span>
+            <span><i class="bx bxs-phone-call"></i> +234 701 1917 533</span>
+            <span><i class="bx bxs-alarm"></i> Mon - Sat (08 AM - 10 PM)</span>
+          </div>
+          <div class="col-2">
+            <a href="#"><i class="bx bx-arrow-to-right"></i> Login</a>
+            <a href="#"><i class="bx bxs-user"></i> Register</a>
+            <span>Follow Us:</span>
+            <div class="social">
+              <i class="bx bxl-twitter"></i>
+
+              <i class="bx bxl-facebook"></i>
+
+              <i class="bx bxl-instagram"></i>
+
+              <i class="bx bxl-linkedin-square"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------nav header section------------- -->
+    <header class="header">
+      <div class="logo">
+        <img src="./img/logo/logo.png" alt="" />
+      </div>
+      <nav>
+        <div class="navbar">
+          <ul class="navLink">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+              <a href="#"  class="active">Inventory <i class="bx bx-chevron-down"></i></a>
+              <ul class="drop-down">
+                <li><a href="./inventory_grid.html">Inventory Grid</a></li>
+                <li><a href="./inventory_list.html" class="active">Inventory List</a></li>
+                <li><a href="./inventory_single.html">Inventory Single</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Pages <i class="bx bx-chevron-down"></i></a>
+
+              <ul class="drop-down">
+                <li><a href="#">About</a></li>
+                <li>
+                  <a href="#"
+                    >Car Listing <i class="bx bx-chevron-down chev"></i
+                  ></a>
+
+                  <ul class="drop-down-2">
+                    <li><a href="#">Listing Grid</a></li>
+                    <li><a href="#">Listing List</a></li>
+                    <li><a href="#">Listing Single</a></li>
+                    <li><a href="#">Compare</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Account</a></li>
+                <li>
+                  <a href="#"
+                    >My Account <i class="bx bx-chevron-down chev"></i
+                  ></a>
+                  <ul class="drop-down-2">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">My Listing</a></li>
+                    <li><a href="#">Add Listing</a></li>
+                    <li><a href="#">My Favorites</a></li>
+                    <li><a href="#">Message</a></li>
+                    <li><a href="#">Settings</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    >Authentication <i class="bx bx-chevron-down chev"></i
+                  ></a>
+                  <ul class="drop-down-4">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Forgot Password</a></li>
+                    <li><a href="#">Reset Password</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    >Services <i class="bx bx-chevron-down chev"></i
+                  ></a>
+                  <ul class="drop-down-5">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Services Single</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Dealer <i class="bx bx-chevron-down chev"></i></a>
+                  <ul class="drop-down-6">
+                    <li><a href="#">Dealer</a></li>
+                    <li><a href="#">Dealer Single</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Extra Pages</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Pricing Plan</a></li>
+                <li><a href="#">Calculator</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Testimonials</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Shop <i class="bx bx-chevron-down"></i></a>
+              <ul class="drop-down">
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Shop Casting</a></li>
+                <li><a href="#">Shop Checkout</a></li>
+                <li><a href="#">Shop Single</a>e</li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Blog <i class="bx bx-chevron-down"></i></a>
+              <ul class="drop-down">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Blog Single</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="other">
+          <i class="bx bx-search"></i>
+          <i class="bx bx-cart-download cart"></i>
+          <button class="addBtn">
+            <i class="bx bx-plus-circle"></i>
+            Add Listing
+          </button>
+          <i class="bx bx-menu-alt-left" id="menuBtn"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div class="inventory">
+      <h2>Inventory List</h2>
+      <div class="link">
+        <a href="./index.html">Home</a>
+        <span>>>></span>
+        <p>Inventory List</p>
+      </div>
+    </div>
+
+    <section class="arrivals show">
+      <div class="col-1">
+        <div class="show-col">
+          <h5>search</h5>
+          <div class="searchBox">
+            <input type="text" class="searchbar" placeholder="search" /><i
+              class="bx bx-search-alt-2"
+            ></i>
+          </div>
+        </div>
+        <div class="show-col">
+          <h5>Transmission</h5>
+          <div class="checkBox">
+            <input type="checkbox" />Automatic <br />
+            <input type="checkbox" />Manual<br />
+          </div>
+        </div>
+        <div class="show-col">
+          <h5>Fuel Type</h5>
+          <div class="checkBox">
+            <input type="checkbox" />Gas<br />
+            <input type="checkbox" /> Hybrid<br />
+            <input type="checkbox" />Diesel <br />
+            <input type="checkbox" />Electric<br />
+          </div>
+        </div>
+
+        <div class="show-col">
+          <h5>Features</h5>
+          <div class="checkBox">
+            <input type="checkbox" />Airbag-Driver<br />
+            <input type="checkbox" /> Airbag-Passenger<br />
+            <input type="checkbox" />Alloy Wheels<br />
+            <input type="checkbox" />Anti-lock Braking System<br />
+          </div>
+        </div>
+        <div class="show-col">
+          <h5>Brand</h5>
+          <div class="checkBox">
+            <input type="checkbox" />All Brands <br />
+            <input type="checkbox" /> BMW<br />
+            <input type="checkbox" />Toyota <br />
+            <input type="checkbox" />Ferrari<br />
+            <input type="checkbox" />Audi<br />
+            <input type="checkbox" />Mercedes<br />
+            <input type="checkbox" />Hyundai<br />
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="head">
+          <span>showing 1-10 0f 50 results</span>
+          <div class="others">
+            <i class="bx bx-grid-alt grid"></i>
+            <i class="bx bx-menu"></i>
+          </div>
+          <select>
+            <option value="">Sort By Default</option>
+            <option value="">Sort By Featured</option>
+            <option value="">Sort By Latest</option>
+            <option value="">Sort By Low Price</option>
+            <option value="">Sort By High Price</option>
+          </select>
+        </div>
+
+        <div class="arr-row row inventory_list">
+
+          <div class="arr-col">
+            <div class="image">
+              <img src="./img/arrivals/01.jpg" alt="" />
+            </div>
+
+            <div class="list">
+            <h5>Mercedes Benz</h5>
+            <div class="rating">
+              <div class="start">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="review">
+                <span>5.0 (5.8 5k review)</span>
+              </div>
+            </div>
+            <div class="feature">
+              <span><i class="bx bx-error-circle"></i>Automatic</span>
+
+              <span><i class="bx bx-label"></i>10.15kx</span>
+
+              <span><i class="bx bx-car"></i>Model 2023</span>
+
+              <span><i class="bx bx-target-lock"></i>Hybrid</span>
+            </div>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est velit pariatur, consequatur fuga, ratione nisi nobis eius quam facere, nulla corrupti autem minima.</p>
+            <div class="price">
+              <p>$45,628</p>
+              <button>Details</button>
+            </div>
+        </div>
+          </div>
+
+          <div class="arr-col">
+            <div class="image">
+              <img src="./img/arrivals/02.jpg" alt="" />
+            </div>
+
+            <div class="list">
+            <h5>Mercedes Benz</h5>
+            <div class="rating">
+              <div class="start">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="review">
+                <span>5.0 (5.8 5k review)</span>
+              </div>
+            </div>
+
+            <div class="feature">
+              <span><i class="bx bx-error-circle"></i>Automatic</span>
+
+              <span><i class="bx bx-label"></i>10.15kx</span>
+
+              <span><i class="bx bx-car"></i>Model 2023</span>
+
+              <span><i class="bx bx-target-lock"></i>Hybrid</span>
+            </div>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est velit pariatur, consequatur fuga, ratione nisi nobis eius quam facere, nulla corrupti autem minima.</p>
+            <div class="price">
+              <p>$45,628</p>
+              <button>Details</button>
+            </div>
+        </div>
+          </div>
+
+          <div class="arr-col">
+            <div class="image">
+              <img src="./img/arrivals/03.jpg" alt="" />
+            </div>
+            <div class="list">
+            <h5>Mercedes Benz</h5>
+            <div class="rating">
+              <div class="start">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="review">
+                <span>5.0 (5.8 5k review)</span>
+              </div>
+            </div>
+
+            <div class="feature">
+              <span><i class="bx bx-error-circle"></i>Automatic</span>
+
+              <span><i class="bx bx-label"></i>10.15kx</span>
+
+              <span><i class="bx bx-car"></i>Model 2023</span>
+
+              <span><i class="bx bx-target-lock"></i>Hybrid</span>
+            </div>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est velit pariatur, consequatur fuga, ratione nisi nobis eius quam facere, nulla corrupti autem minima.</p>
+            <div class="price">
+              <p>$45,628</p>
+              <button>Details</button>
+            </div>
+        </div>
+          </div>
+
+          <div class="arr-col">
+            <div class="image">
+              <img src="./img/arrivals/04.jpg" alt="" />
+            </div>
+
+            <div class="list">
+            <h5>Mercedes Benz</h5>
+            <div class="rating">
+              <div class="start">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="review">
+                <span>5.0 (5.8 5k review)</span>
+              </div>
+            </div>
+
+            <div class="feature">
+              <span><i class="bx bx-error-circle"></i>Automatic</span>
+
+              <span><i class="bx bx-label"></i>10.15kx</span>
+
+              <span><i class="bx bx-car"></i>Model 2023</span>
+
+              <span><i class="bx bx-target-lock"></i>Hybrid</span>
+            </div>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est velit pariatur, consequatur fuga, ratione nisi nobis eius quam facere, nulla corrupti autem minima.</p>
+            <div class="price">
+              <p>$45,628</p>
+              <button>Details</button>
+            </div>
+        </div>
+          </div>
+
+          <div class="arr-col">
+            <div class="image">
+              <img src="./img/arrivals/05.jpg" alt="" />
+            </div>
+            <div class="list">
+            <h5>Mercedes Benz</h5>
+            <div class="rating">
+              <div class="start">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="review">
+                <span>5.0 (5.8 5k review)</span>
+              </div>
+            </div>
+
+            <div class="feature">
+              <span><i class="bx bx-error-circle"></i>Automatic</span>
+
+              <span><i class="bx bx-label"></i>10.15kx</span>
+
+              <span><i class="bx bx-car"></i>Model 2023</span>
+
+              <span><i class="bx bx-target-lock"></i>Hybrid</span>
+            </div>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est velit pariatur, consequatur fuga, ratione nisi nobis eius quam facere, nulla corrupti autem minima.</p>
+            <div class="price">
+              <p>$45,628</p>
+              <button>Details</button>
+            </div>
+        </div>
+          </div>
+
+          <div class="arr-col">
+            <div class="image">
+              <img src="./img/arrivals/06.jpg" alt="" />
+            </div>
+            <div class="list">
+            <h5>Mercedes Benz</h5>
+            <div class="rating">
+              <div class="start">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="review">
+                <span>5.0 (5.8 5k review)</span>
+              </div>
+            </div>
+
+            <div class="feature">
+              <span><i class="bx bx-error-circle"></i>Automatic</span>
+
+              <span><i class="bx bx-label"></i>10.15kx</span>
+
+              <span><i class="bx bx-car"></i>Model 2023</span>
+
+              <span><i class="bx bx-target-lock"></i>Hybrid</span>
+            </div>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est velit pariatur, consequatur fuga, ratione nisi nobis eius quam facere, nulla corrupti autem minima.</p>
+            <div class="price">
+              <p>$45,628</p>
+              <button>Details</button>
+            </div>
+        </div>
+          </div>
+
+          <div class="arr-col">
+            <div class="image">
+              <img src="./img/arrivals/07.jpg" alt="" />
+            </div>
+            <div class="list">
+            <h5>Mercedes Benz</h5>
+            <div class="rating">
+              <div class="start">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="review">
+                <span>5.0 (5.8 5k review)</span>
+              </div>
+            </div>
+
+            <div class="feature">
+              <span><i class="bx bx-error-circle"></i>Automatic</span>
+              <span><i class="bx bx-label"></i>10.15kx</span>
+              <span><i class="bx bx-car"></i>Model 2023</span>
+              <span><i class="bx bx-target-lock"></i>Hybrid</span>
+            </div>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est velit pariatur, consequatur fuga, ratione nisi nobis eius quam facere, nulla corrupti autem minima.</p>
+            <div class="price">
+              <p>$45,628</p>
+              <button>Details</button>
+            </div>
+        </div>
+          </div>
+
+          <div class="arr-col">
+            <div class="image">
+              <img src="./img/arrivals/08.jpg" alt="" />
+            </div>
+            <div class="list">
+            <h5>Mercedes Benz</h5>
+            <div class="rating">
+              <div class="start">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="review">
+                <span>5.0 (5.8 5k review)</span>
+              </div>
+            </div>
+
+            <div class="feature">
+              <span><i class="bx bx-error-circle"></i>Automatic</span>
+              <span><i class="bx bx-label"></i>10.15kx</span>
+              <span><i class="bx bx-car"></i>Model 2023</span>
+              <span><i class="bx bx-target-lock"></i>Hybrid</span>
+            </div>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est velit pariatur, consequatur fuga, ratione nisi nobis eius quam facere, nulla corrupti autem minima.</p>
+            <div class="price">
+              <p>$45,628</p>
+              <button>Details</button>
+            </div>
+        </div>
+          </div>
+
+          <div class="arr-col">
+            <div class="image">
+              <img src="./img/arrivals/09.jpg" alt="" />
+            </div>
+            <div class="list">
+            <h5>Mercedes Benz</h5>
+            <div class="rating">
+              <div class="start">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="review">
+                <span>5.0 (5.8 5k review)</span>
+              </div>
+            </div>
+
+            <div class="feature">
+              <span><i class="bx bx-error-circle"></i>Automatic</span>
+              <span><i class="bx bx-label"></i>10.15kx</span>
+              <span><i class="bx bx-car"></i>Model 2023</span>
+              <span><i class="bx bx-target-lock"></i>Hybrid</span>
+            </div>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est velit pariatur, consequatur fuga, ratione nisi nobis eius quam facere, nulla corrupti autem minima.</p>
+            <div class="price">
+              <p>$45,628</p>
+              <button>Details</button>
+            </div>
+        </div>
+          </div>
+
+          <div class="arr-col">
+            <div class="image">
+              <img src="./img/arrivals/07.jpg" alt="" />
+            </div>
+            <div class="list">
+            <h5>Mercedes Benz</h5>
+            <div class="rating">
+              <div class="start">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="review">
+                <span>5.0 (5.8 5k review)</span>
+              </div>
+            </div>
+
+            <div class="feature">
+              <span><i class="bx bx-error-circle"></i>Automatic</span>
+              <span><i class="bx bx-label"></i>10.15kx</span>
+              <span><i class="bx bx-car"></i>Model 2023</span>
+              <span><i class="bx bx-target-lock"></i>Hybrid</span>
+            </div>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est velit pariatur, consequatur fuga, ratione nisi nobis eius quam facere, nulla corrupti autem minima.</p>
+            <div class="price">
+              <p>$45,628</p>
+              <button>Details</button>
+            </div>
+        </div>
+          </div>
+
+          <div class="arr-col">
+            <div class="image">
+              <img src="./img/arrivals/08.jpg" alt="" />
+            </div>
+            <div class="list">
+            <h5>Mercedes Benz</h5>
+            <div class="rating">
+              <div class="start">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="review">
+                <span>5.0 (5.8 5k review)</span>
+              </div>
+            </div>
+
+            <div class="feature">
+              <span><i class="bx bx-error-circle"></i>Automatic</span>
+              <span><i class="bx bx-label"></i>10.15kx</span>
+              <span><i class="bx bx-car"></i>Model 2023</span>
+              <span><i class="bx bx-target-lock"></i>Hybrid</span>
+            </div>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est velit pariatur, consequatur fuga, ratione nisi nobis eius quam facere, nulla corrupti autem minima.</p>
+            <div class="price">
+              <p>$45,628</p>
+              <button>Details</button>
+            </div>
+        </div>
+          </div>
+
+          <div class="arr-col">
+            <div class="image">
+              <img src="./img/arrivals/09.jpg" alt="" />
+            </div>
+            <div class="list">
+            <h5>Mercedes Benz</h5>
+            <div class="rating">
+              <div class="start">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="review">
+                <span>5.0 (5.8 5k review)</span>
+              </div>
+            </div>
+            <div class="feature">
+              <span><i class="bx bx-error-circle"></i>Automatic</span>
+              <span><i class="bx bx-label"></i>10.15kx</span>
+              <span><i class="bx bx-car"></i>Model 2023</span>
+              <span><i class="bx bx-target-lock"></i>Hybrid</span>
+            </div>
+            <p class="list_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est velit pariatur, consequatur fuga, ratione nisi nobis eius quam facere, nulla corrupti autem minima.</p>
+            <div class="price">
+              <p>$45,628</p>
+              <button>Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="number">
+          <span class="black"><i class="bx bx-left-arrow-alt"></i></span>
+          <span>1</span>
+          <span class="black">2</span>
+          <span class="black">3</span>
+          <span class="black"><i class="bx bx-right-arrow-alt"></i></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <img src="./img/logo/logo-light.png" alt="" />
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse
+            rem excepturi dolores mollitia, fuga eaque atque quidem aliquid
+            accusamus vero quod reiciendis quo incidunt! Quod aperiam labore
+            distinctio rerum!
+          </p>
+          <span><i class="bx bx-phone"></i>+234 701 1917 533</span>
+          <span
+            ><i class="bx bx-location-plus"></i>28 lekki admiralty way lagos
+            state nigeria</span
+          >
+          <span><i class="bx bx-envelope"></i>amstronggooluck@gmail.com</span>
+        </div>
+
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <a href="#"><i class="bx bx-chevron-right"></i>About Us</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>Update News</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>Testimpnials</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>Teams Of Servive</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>privacy policy</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>Our Dealer</a>
+        </div>
+
+        <div class="footer-col">
+          <h5>Support Center</h5>
+          <a href="#"><i class="bx bx-chevron-right"></i>FAQ's</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>Affiliate</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>Booking Tips</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>Sell Vehicles</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>Contact Us</a>
+          <a href="#"><i class="bx bx-chevron-right"></i>Sitmap</a>
+        </div>
+
+        <div class="footer-col">
+          <h5>Newsletter</h5>
+          <p class="text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+          <input type="text" placeholder="Your Email" />
+          <button>Subscribe Now <i class="bx bxl-telegram"></i></button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; copyright 2023 <span>MOTOB</span> All Right Reserved.</p>
+        <div class="social">
+          <i class="bx bxl-facebook"></i>
+          <i class="bx bxl-twitter"></i>
+          <i class="bx bxl-instagram"></i>
+          <i class="bx bxl-linkedin"></i>
+          <i class="bx bxl-youtube"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- swiper js link -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
